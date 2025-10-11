@@ -1,13 +1,11 @@
-from functools import lru_cache
 
 
 
 def ht(t):
     return 2 * t[0] - t[1] - t[2]
 
-@lru_cache(None)
 def b_paths(t, bd):
-    """Retrurns the number of 3d ballot paths from (0,0,0) to t (n,n,n) with intermediate points 
+    """Retrurns the number of 3d ballot paths from (0,0,0) to point t (which is of form (n,n,n)) with intermediate points 
 x0, x1 and x2 such that each path does has a height function ht(t) which is
 less than or equal to bd
 """
@@ -33,3 +31,4 @@ for i in range(6):
     for b in range(1, 2*i+1):
         s = s + " "+ str(b_paths((i, i, i), b))) + ","
     print(s)
+
