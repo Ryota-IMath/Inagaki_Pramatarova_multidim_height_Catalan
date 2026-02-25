@@ -1,6 +1,3 @@
-
-
-
 def ht(t):
     return 2 * t[0] - t[1] - t[2]
 
@@ -28,7 +25,6 @@ less than or equal to bd
 
 for i in range(6):
     s = ""
-    for b in range(1, 2*i+1):
-        s = s + " "+ str(b_paths((i, i, i), b))) + ","
+    for b in range(2, 2*i+1):
+        s = s + " "+ str(b_paths((i, i, i), b)-b_paths((i, i, i), b-1)) + ","
     print(s)
-
