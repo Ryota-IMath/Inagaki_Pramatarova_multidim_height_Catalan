@@ -9,7 +9,7 @@ n = 6 # length - 4n
 s = 6 # number of peaks - s
 
 
-
+@lru_cache(None) # Added to speed up calculation.
 
 
 """
@@ -110,6 +110,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
