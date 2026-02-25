@@ -12,7 +12,9 @@ s = 6 # number of peaks - s
 @lru_cache(None) # Added to speed up calculation.
 
 
-"""
+
+def count_dyck_words(x_rem, y_rem, z_rem, w_rem, x_used, y_used, z_used, w_used, last_char, s_needed):
+    """
 
     Counts the number of 4D ballot paths of length 4n
 
@@ -37,10 +39,6 @@ s = 6 # number of peaks - s
       s_needed : number of peaks still required
 
 """
-
-
-
-def count_dyck_words(x_rem, y_rem, z_rem, w_rem, x_used, y_used, z_used, w_used, last_char, s_needed):
 
     if x_rem == y_rem == z_rem == w_rem == 0:
 
@@ -110,6 +108,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
