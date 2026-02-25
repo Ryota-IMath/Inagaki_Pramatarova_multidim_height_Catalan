@@ -23,8 +23,9 @@ less than or equal to bd
 
     return count
 
-for i in range(6):
+for i in range(7):
     s = ""
     for b in range(2, 2*i+1):
         s = s + " "+ str(b_paths((i, i, i), b)-b_paths((i, i, i), b-1)) + ","
     print(s)
+
