@@ -4,7 +4,7 @@ from functools import lru_cache
 
 
 
-n = 6 # length - 3n
+n = 6 # length - 4n
 
 s = 6 # number of peaks - s
 
@@ -110,6 +110,7 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
 
