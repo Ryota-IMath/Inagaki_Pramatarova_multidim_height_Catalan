@@ -102,7 +102,7 @@ def main():
 
     print(f"Number of 4d Narayana paths n={n}, s={s} → {result}")
     for n in range(1, 6):
-        s = s +""
+        s = ""
         for p in range(1, n+1):
             s = s +str(count_dyck_words(n, n, n, n, 0, 0, 0, 0, -1, p))+", "
         print(s)
@@ -110,5 +110,6 @@ def main():
 if __name__ == "__main__":
 
     main()
+
 
 
